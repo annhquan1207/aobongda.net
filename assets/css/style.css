@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+.row{
+   margin-left: 0;
+   margin-right: 0;
+   max-width: 1263px;
+}
+body{
+    font-weight: 400;
+    line-height: 1.5;
+}
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FAFAFA;
+}
+
+.wp-header{
+    position: relative;
+    
+}
+.contact-icon span{
+    margin-left: 7px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.contact{
+    margin-left: 80px;
+    padding-bottom: 10px ;
+}
+.contact-icon i{
+    color: #000066;
+}
+.number-contact span{
+    font-size: 20px;
+    color: #CC0000;
+    font-weight: bolder;
+}
+.search-header{
+    display: flex;
+    position: absolute;
+    margin-left: -40px;
+}
+.search-header input{
+    border:none;
+    outline: none;
+    padding-left: 15px;
+    color:#666666;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: silver solid 1px;
+    border-radius: 25px;
+    width: 350px;
+}
+.search-header button{
+    border: none;
+    position: absolute;
+    left: 320px;
+    top: 2px;
+    color: #666666;
+    background-color: #ffffff;
+}
+.search-header button:focus{
+    outline: none;
+}
+.login-header{
+    position: absolute;
+    display: flex;
+    margin-left: -40px;
+    margin-top: 8px;
+}
+.login-header button{
+    color: #666666;
+    border: none;
+    background-color: #FAFAFA;
+    font-size: 20px;
+    padding-left: 5px;
+}
+.login-header button:focus{
+    outline: none;
+}
+.dropdown{
+    margin-top: 8px;
+}
+.dropdown button{
+    background-color: #FAFAFA;
+    font-size: 20px;
+    color: #666666;
+    border: none;
+}
+#my-dropdown button:focus{
+    outline: none;
+}
+.form-group button{
+    padding: 5px 5px 5px 5px;
+    background-color: #E10615;
+    color: #ffffff;
+}
+/* -------------END-HEADER--------------*/
+.menu-content{
+    background-color: #312783;
+    height: 40px;
+    z-index: 1;
+}
+.menu{
+    margin-left: 47px;
+    z-index: 3;
+}
+.menu > li{
+    display: inline-block;
+}
+.menu li {
+   position: relative;
+}
+.menu li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0 11px 0 7px;
+    line-height: 40px;
+    text-decoration: none;
+    display: block;
+}
+.menu >li:hover{
+    background-color: #4F45A5;
+    transition: .5s;
+}
+.submenu-1 {
+    display: none;
+    position: absolute;
+    background-color: #312783 ;
+    list-style:none;
+    min-width: 180px;
+    padding-left: 8px;
+}
+.menu li:hover .submenu-1{
+    display: block;
+}
+.submenu-1 li a{
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+    border-top: solid 1px white ;
+}
+/* END SUBMENU1 */
+.submenu-2 {
+    display: none;
+    position: absolute;
+    background-color: #312783 ;
+    list-style:none;
+    min-width: 250px;
+    padding-left: 8px;
+}
+.menu li:hover .submenu-2{
+    display: block;
+}
+.submenu-2 li a{
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+    border-top: solid 1px white ;
+}
+/* END SUBMENU 2 */
+.submenu-3{
+    display: none;
+    position: absolute;
+    background-color: #312783 ;
+    list-style:none;
+    min-width: 200px;
+    padding-left: 8px;
+}
+.menu li:hover .submenu-3{
+    display: block;
+}
+.submenu-3 li a{
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+    border-top: solid 1px white ;
+}
+/*  */
+.submenu-4{
+    display: none;
+    position: absolute;
+    background-color: #312783 ;
+    list-style:none;
+    min-width: 150px;
+    padding-left: 8px;
+}
+.menu li:hover .submenu-4{
+    display: block;
+}
+.submenu-4 li a{
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+    border-top: solid 1px white ;
+}
+/*  */
+.submenu-5{
+    display: none;
+    position: absolute;
+    background-color: #312783 ;
+    list-style:none;
+    min-width: 190px;
+    padding-left: 8px;
+}
+.menu li:hover .submenu-5{
+    display: block;
+}
+.submenu-5 li a{
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+    border-top: solid 1px white ;
+}
+/*  */
+.submenu-6{
+    display: none;
+    position: absolute;
+    background-color: #312783 ;
+    list-style:none;
+    min-width: 120px;
+    padding-left: 8px;
+}
+.menu li:hover .submenu-6{
+    display: block;
+}
+.submenu-6 li a{
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+    border-top: solid 1px white ;
+}
+/************* END MENU ***************/
+#home-slide{
+    z-index: 2;
+}
+.sock-sock{
+    display: flex;
+}
+.sock-price-today{
+    background-color: #ffffff;
+    margin-top: 20px;
+    /* height: 400px; */
+    padding-bottom: 15px;
+    padding-top: 15px;
+   
+}
+.sock-price-today .title-sock-price-today,
+.title-extend{
+    font-style: italic;
+    font-size: 20px;
+    color: #FF751B;
+   
+}
+.sock-price-product-today{
+   padding-top: 10px;
+   padding-right: 40px;
+}
+.sock-price-now a {
+    color: #FF424E;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none  !important;
+}
+.sock-price-now span{
+    color: #FF424E;
+}
+.sock-price-sale a {
+    border: solid red 1px;
+    font-size: 14px;
+    padding-right: 2px;
+    padding-left: 2px;
+    background-color: #FFF0F1;
+    text-decoration: none !important;
+} 
+.sock-price-sale span{
+    color: #FF424E;
+}
+.sock-price{
+    display: flex;
+    margin-top: 10px;
+}
+.sock-price-sale{
+    margin-left: 18px;
+    margin-top: 2px;
+}
+.sock-sold {
+    border: red solid 1px;
+    text-align: center;
+    margin-top: 12px;
+    border-radius: 10px;
+    background-color: #FF424E;
+    font-size: 15px;
+    border: none;
+}
+.sock-sold a{
+    color: #ffffff  !important;
+    text-decoration: none !important;
+}
+.sock-img:hover img{
+    box-shadow:  0px 0px 10px 10px #F5F5F5;
+}
+/* End Sock Price */
+.product-content{
+    background-color: #ffffff   ;
+}
+.title-product-content{
+    background-color: #E4E4E4;
+    height: 44px;
+    display: flex;
+    margin-left: -13px;
+    justify-content: space-between;
+    width: 102.5%;
+}
+.main-title-product-content{
+    background-color: #312783;
+}
+.main-title-product-content h2 a{
+    font-size: 20px;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+.main-title-product-content h2{
+    line-height: 34px;
+}
+.sub-title-product-content h3 a{
+    color: #393939;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 15px 5px 15px;
+    background-color: #F7F7F7;
+    border: #F7F7F7 solid 1px;
+    border-radius: 25px;
+    margin: 3px;
+}
+.sub-title-product-content{
+    display: flex;
+}
+.main-product-content{
+    background-color: #ffffff;
+    display: flex;
+    margin-top: 20px;
+    width: 216px;
+}
+.details-product-content{
+    border: #F2F2F2 solid 1px;
+    margin-right: 34px;
+}
+.details-product-content img{
+    padding: 10px;
+    padding-left: 20px;
+}
+.name-product-content a{
+    color: black;
+    text-decoration: none !important;
+}
+.name-product-content{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.price-product-content b{
+    color: red;
+    font-size: 15px;
+    margin-right: 3px;
+}
+.price-product-content span{
+    font-size: 12px;
+    color: #999999;
+}
+.price-product-content{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.more-product-content{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.more-product-content a{
+    font-size: 13px;
+    color: #312783; 
+    text-decoration: none !important;
+}
+.main-news h5{
+    margin-top: 15px;
+    margin-left: 120px;
+}
+.main-news span{
+    text-align: center;
+}
+.main-news{
+    width: 680px;
+}
+.news{
+    display: flex;
+}
+.other-news-1,
+.other-news-2,
+.other-news-3,
+.other-news-4{
+    display: flex;
+    padding-bottom: 15px;
+    padding-left: 8px;
+}
+.other-news-1 span,
+.other-news-2 span,
+.other-news-3 span,
+.other-news-4 span{
+    padding-left: 10px;
+}
+.footer-1 h6,
+.footer-2 h6,
+.footer-3 h6{
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.footer-1 span,
+.footer-2 span{
+    padding-left: 10px;
+    margin-top: -15px;
+    display: block;
+}
+.footer-3 img{
+    padding-right: 6px;
+}
+.footer-4 iframe{
+    padding-right: 70px;
+}
