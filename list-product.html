@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style-list-product.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/javascript/js.js">
+</head>
+
+<body>
+    <script src="./assets/jquery/jquery-3.6.0.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/bootstrap/js/popper.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+
+    
+
+    <!-- optinal JS,JQ,BT -->
+
+
+    <div class="wrapper">
+        <div class="wp-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 mt-3">
+                        <div class="logo">
+                            <a href="#"><img src="./assets/images/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <div class="contact">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>Hotline</span>
+                            </div>
+                            <div class="number-contact">
+                                <span>0383.198.127</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <div class="search-header">
+                            <div class="search">
+                                <input type="text" name="search" id="" placeholder="Tìm kiếm ... ">
+                            </div>
+                            <div class="search-icon">
+                                <button><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mt-3">
+                        <div class="login-header">
+                            <button><i class="fas fa-user"></i></button>
+                            <button class="" data-toggle="modal" data-target="#dialog1">
+                                Đăng nhập /
+                            </button>
+                            <div class="modal fade" id="dialog1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">ĐĂNG NHẬP</h5>
+                                            <button class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- Trình bày các thành phần của Hộp thoại ở đây -->
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label for="user-name">Tên đăng nhập</label>
+                                                    <input type="email" class="form-control" name="" id="user-name"
+                                                        placeholder="Nhập email của bạn">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="password">Mật khẩu</label>
+                                                    <input type="password" class="form-control" name="" id="password"
+                                                        placeholder="Mật khẩu tối thiểu 8 kí tự">
+                                                </div>
+                                                <div class="form-group ml-4">
+                                                    <input type="checkbox" class="form-check-input" name=""
+                                                        id="Remember-me">
+                                                    <label for="Remember-me" class="form-check-label">Lưu đăng
+                                                        nhập</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="button" class="btn-block">Đăng nhập</button>
+                                                </div>
+                                                <div style="text-align: center;"><span>Bạn chưa có tài khoản
+                                                        ?</span><span style="margin-left: 5px;"><a href=""
+                                                            style="color: red; text-decoration:none"> Đăng ký</a></span>
+                                                </div>
+                                                <div style="text-align: center;"><span><a href=""
+                                                            style="text-decoration: none;">Quên mật khẩu?</span></a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="" data-toggle="modal" data-target="#dialog2">
+                                Đăng kí
+                            </button>
+                            <div class="modal fade" id="dialog2" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">ĐĂNG KÝ</h5>
+                                            <button class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- Trình bày các thành phần -->
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label for="name">Họ tên</label>
+                                                    <input type="text" class="form-control" name="" id="name"
+                                                        placeholder="Họ tên của bạn">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="number-phone">Họ tên</label>
+                                                    <input type="number" class="form-control" name="" id="number-phone"
+                                                        placeholder="Điện thoại của bạn">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="your-email">Họ tên</label>
+                                                    <input type="email" class="form-control" name="" id="your-email"
+                                                        placeholder="Email của bạn">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="your-address">Họ tên</label>
+                                                    <input type="text" class="form-control" name="" id="your-address"
+                                                        placeholder="Địa chỉ của bạn">
+                                                </div>
+                                                <div class="form-group">
+                                                    <span style="padding-right: 10px;">Giới tính</span>
+                                                    <input type="radio" name="gender" id="male" value="male">
+                                                    <label style="padding-right: 10px;" for="male">Nam</label>
+                                                    <input type="radio" name="gender" id="female" value="female">
+                                                    <label style="padding-right: 10px;" for="female">Nữ</label>
+                                                    <input type="radio" name="gender" id="other" value="other">
+                                                    <label style="padding-right: 10px;" for="other">Khác</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="birth">Này sinh</label>
+                                                    <input type="text" class="form-control" name="" id="birth"
+                                                        placeholder="Ngày/Tháng/Năm sinh">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="password">Mật khẩu</label>
+                                                    <input type="password" class="form-control" name="" id="password"
+                                                        placeholder="Mật khẩu tối thiểu 8 kí tự">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="re-password">Nhập lại mật khẩu</label>
+                                                    <input type="password" class="form-control" name="" id="password"
+                                                        placeholder="Mật khẩu tối thiểu 8 kí tự">
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="button" class="btn-block">Đăng Ký</button>
+                                                </div>
+                                                <div style="text-align: center;"><span>Bạn đã có tài khoản ?</span><span
+                                                        style="margin-left: 5px;"><a href=""
+                                                            style="color: red; text-decoration:none"> Đăng
+                                                            nhập</a></span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 mt-3">
+                        <div class="dropdown float-right" id="my-dropdown">
+                            <button class="dropdown-toggle" data-toggle="dropdown" data-display="static">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <span class="dropdown-item">Bạn chưa thêm sản phẩm nào vào giỏ hàng!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------------- END HEADER ---------------------->
+        <div class="wp-content mt-2">
+            <div class="menu-content">
+                <div class="row">
+                    <ul class="menu">
+                        <li><a href="">Trang chủ</a></li>
+                        <li>
+                            <a href="">Áo đội tuyển quốc gia</a>
+                            <ul class="submenu-1">
+                                <li><a href="">Áo Euro 2021</a></li>
+                                <li><a href="">Áo đội tuyển châu Mỹ</a></li>
+                                <li><a href="">Áo đội tuyển châu Á</a></li>
+                                <li><a href="">Áo đội tuyển châu Phi</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Áo câu lạc bộ</a>
+                            <ul class="submenu-2">
+                                <li><a href="">Giải Ngoại Hạng Anh (Pr.League)</a></li>
+                                <li><a href="">Giải Tây Ban Nha (Laliga)</a></li>
+                                <li><a href="">Giải Ý (Seria)</a></li>
+                                <li><a href="">Giải Đức (Budesliga)</a></li>
+                                <li><a href="">Giải Pháp (League 1)(</a></li>
+                                <li><a href="">Các giải khác (V-League)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Áo không logo</a></li>
+                        <li>
+                            <a href="">Giày bóng đá</a>
+                            <ul class="submenu-3">
+                                <li><a href="">Giày Bóng Đá Việt Nam</a></li>
+                                <li><a href="">Giày Bóng Đá Adidas</a></li>
+                                <li><a href="">Giày Bóng Đá Wika</a></li>
+                                <li><a href="">Giày Bóng Đá Ebet</a></li>
+                                <li><a href="">Giày Bóng Đá Nike</a></li>
+                                <li><a href="">Giày Bóng Đá Trẻ em</a></li>
+                                <li><a href="">Giày Bóng Đá Loại 1</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Áo khoác</a>
+                            <ul class="submenu-4">
+                                <li><a href="">Áo khoác CLB</a></li>
+                                <li><a href="">Áo khoác ĐTQG</a></li>
+                                <li><a href="">Áo khoác trẻ em</a></li>
+                                <li><a href="">Áo khoác dày</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Áo dài tay</a></li>
+                        <li><a href="">Áo trẻ em</a></li>
+                        <li><a href="">In áo bóng đá</a></li>
+                        <li><a href="">
+                                Phụ kiện</a>
+                            <ul class="submenu-5">
+                                <li><a href="">Túi Đựng Đồ</a></li>
+                                <li><a href="">Quả Bóng Đá</a></li>
+                                <li><a href="">Găng tay thủ môn</a></li>
+                                <li><a href="">Tất bóng đá</a></li>
+                                <li><a href="">Cờ, cúp, huy chương</a></li>
+                                <li><a href="">Áo Thủ Môn</a></li>
+                                <li><a href="">Áo Tập</a></li>
+                                <li><a href="">Phụ kiện Bảo vệ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Hệ thống chi nhánh</a>
+                            <ul class="submenu-6">
+                                <li><a href="">Hà Nội</a></li>
+                                <li><a href="">TP Hồ Chí Minh</a></li>
+                                <li><a href="">Đà Nẵng</a></li>
+                                <li><a href="">Khác</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!---------------------END MENU------------------------->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ol style="background-color: #ffffff;" class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./index.html">Trang chủ</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Tin tức nổi bật</li>
+                        <li class="breadcrumb-item active" aria-current="page">Áo đội tuyển quốc gia</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-intro">
+                        <h1 style="text-align: center;">
+                            <span style="color:#e74c3c">
+                                <strong>Áo bóng đá đội tuyển quốc gia đẹp nhất 2021</strong>
+                            </span>
+                        </h1>
+                        <hr>
+                        <p style="text-align: justify; font-style: italic ; font-weight: bolder;">
+                            <span style="color:#e74c3c">Đầy đủ các mẫu áo bóng đá đội tuyển quốc gia mùa
+                                giải 2021 đẹp nhất, mới nhất</span>
+                            <span style="color:#000099">Đặt áo cho đội tặng ngay bóng 300K+ 2 bộ quần áo 120k + phiếu
+                                mua hàng 200k. Liên hệ: Hotline/Zalo: 0383.198.127"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="product-content mt-4">
+                            <div class="container">
+                                <div class="title-product-content">
+                                    <div class="main-title-product-content rounded">
+                                        <h2><a href="">Áo đội tuyển quốc gia</a></h2>
+                                    </div>
+                                    <div class="sub-title-product-content">
+                                        <h3> <a href="">Áo Euro 2021</a></h3>
+                                        <h3> <a href="">Áo Đội tuyển Châu Mỹ</a></h3>
+                                        <h3> <a href="">Áo Đội tuyển Châu Á</a></h3>
+                                        <h3> <a href="">Áo Đội tuyển Châu Phi</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="description-title-product-content mt-2">
+                                    <span>Bán full mẫu áo bóng đá đội tuyển quốc gia. Khuyến mãi giảm giá sốc đến 50%
+                                        khi đặt áo bóng đá cho đội tuyển. Liên hệ: Hotline/Zalo: 0383.198.127</span>
+                                </div>
+                                <div class="sort-product-content mt-3">
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">Mới nhất
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">Cũ nhất
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline disabled">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">Giá tăng dần
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline disabled">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">Giá giảm dần
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline disabled">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">Xem nhiều nhất
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="main-product-content">
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href="./details-product.html"><img src="./assets/images/product-1.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="./details-product.html"> Áo Bóng Đá Đội tuyển Tây Ban Nha đen đỏ 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href="./details-product.html"> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href="./details-product.html"><img src="./assets/images/product-2.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="./details-product.html"> Áo Bóng Đá Đội tuyển Argentia bích vằn 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href="./details-product.html"> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href="./details-product.html"><img src="./assets/images/product-3.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="./details-product.html"> Áo Bóng Đá Đội tuyển Argentia trắng xanh 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href="./details-product.html"> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href="./details-product.html"><img src="./assets/images/product-4.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="./details-product.html"> Áo Bóng Đá Đội tuyển Ý xanh đen sân khách Euro 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href="./details-product.html"> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href="./details-product.html"><img src="./assets/images/product-5.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="./details-product.html"> Áo Bóng Đá Đội tuyển Ý sân nhà trắng Euro 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href="./details-product.html"> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="main-product-content">
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/list-product-1.jpg" class=""
+                                                    width="200px" height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Tây Ban Nha đen đỏ 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/list-product-2.jpg" class=""
+                                                    width="200px" height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Argentia bích vằn 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/list-product-3.jpg" class=""
+                                                    width="200px" height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Argentia trắng xanh 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/list-product-4.jpg" class=""
+                                                    width="200px" height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Ý xanh đen sân khách Euro 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/list-product-5.jpg" class=""
+                                                    width="200px" height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Ý sân nhà trắng Euro 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="main-product-content">
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/list-product-6.jpg" class=""
+                                                    width="200px" height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Tây Ban Nha đen đỏ 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/product-2.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Argentia bích vằn 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/list-product-4.jpg" class=""
+                                                    width="200px" height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Argentia trắng xanh 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/product-4.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Ý xanh đen sân khách Euro 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/list-product-8.jpg" class=""
+                                                    width="200px" height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Ý sân nhà trắng Euro 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="main-product-content">
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/list-product-6.jpg" class=""
+                                                    width="200px" height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Tây Ban Nha đen đỏ 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/list-product-8.jpg" class=""
+                                                    width="200px" height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Argentia bích vằn 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/list-product-9.jpg" class=""
+                                                    width="200px" height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Argentia trắng xanh 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/list-product-10.jpg" class=""
+                                                    width="200px" height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Ý xanh đen sân khách Euro 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/list-product-6.jpg" class=""
+                                                    width="200px" height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Ý sân nhà trắng Euro 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="main-product-content">
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/list-product-2.jpg" class=""
+                                                    width="200px" height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Tây Ban Nha đen đỏ 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/list-product-7.jpg" class=""
+                                                    width="200px" height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Argentia bích vằn 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/product-3.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Argentia trắng xanh 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/product-4.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Ý xanh đen sân khách Euro 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/list-product-8.jpg" class=""
+                                                    width="200px" height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Ý sân nhà trắng Euro 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="main-product-content">
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/list-product-9.jpg" class=""
+                                                    width="200px" height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Tây Ban Nha đen đỏ 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/list-product-10.jpg" class=""
+                                                    width="200px" height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Argentia bích vằn 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/product-3.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Argentia trắng xanh 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/product-4.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Ý xanh đen sân khách Euro 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/list-product-6.jpg" class=""
+                                                    width="200px" height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Đội tuyển Ý sân nhà trắng Euro 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mt-5 mb-5">
+                    <div class="view-more ">
+                        <button>Xem thêm 189 sản phẩm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mt-4">
+                    <nav>
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled" >
+                                <a href="" class="page-link">
+                                    Trước
+                                </a>
+                            </li>
+                            <li class="page-item disabled">
+                                <a href="" class="page-link">
+                                    1
+                                </a>
+                            </li>
+                            <li class="page-item disabled" >
+                                <a href="" class="page-link">
+                                    2
+                                </a>
+                            </li>
+                            <li class="page-item disabled" >
+                                <a href="" class="page-link">
+                                    3
+                                </a>
+                            </li><li class="page-item disabled" >
+                                <a href="" class="page-link">
+                                    ...
+                                </a>
+                            </li>
+                            <li class="page-item disabled" >
+                                <a href="" class="page-link">
+                                    Sau
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-1 col-md-3">
+                        <h6>CHẤP NHẬN THANH TOÁN</h6>
+                        <span>Chuyển khoản ngân hàng</span><br>
+                        <span>Visa,Master Card</span><br>
+                        <span>Thanh toán khi nhận hàng</span>
+                    </div>
+                    <div class="footer-2 col-md-3">
+                        <h6>HỖ TRỢ KHÁCH HÀNG</h6>
+                        <span> Bảng báo giá</span><br>
+                        <span> Hình thức thanh toán</span><br>
+                        <span> Giao hàng & trả hàng</span><br>
+                        <span> Chính sách bảo hành</span><br>
+                        <span> Thuế GTGT</span><br>
+                        <span> Hệ thống chi nhánh</span><br>
+                    </div>
+                    <div class="footer-3 col-md-3">
+                        <h6>ÁO BÓNG ĐÁ TRÊN</h6>
+                        <a target="blank" href="https://www.facebook.com/annhquan.dev/"><img
+                                src="./assets/images/footer-logo-1.png" alt=""></a>
+                        <a href=""><img src="./assets/images/footer-logo-2.png" alt=""></a>
+                        <a href=""><img src="./assets/images/footer-logo-3.png" alt=""></a>
+                        <a href=""><img src="./assets/images/footer-logo-4.png" alt=""></a>
+                        <br>
+                        <img src="./assets/images/footer-3.jpg" alt="">
+                    </div>
+                    <div class="footer-4 col-md-3">
+                        <h6>Fanpage Facebook</h6>
+                        <a href="https://www.facebook.com/leomessi"><img width="80%" src="./assets/images/fanpage.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

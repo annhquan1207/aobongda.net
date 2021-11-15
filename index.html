@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/javascript/js.js">
+</head>
+
+<body>
+    <script src="./assets/jquery/jquery-3.6.0.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/bootstrap/js/popper.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- optinal JS,JQ,BT -->
+
+
+    <div class="wrapper">
+        <div class="wp-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 mt-3">
+                        <div class="logo">
+                            <a href="#"><img src="./assets/images/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <div class="contact">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>Hotline</span>
+                            </div>
+                            <div class="number-contact">
+                                <span>0383.198.127</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <div class="search-header">
+                            <div class="search">
+                                <input type="text" name="search" id="" placeholder="Tìm kiếm ... ">
+                            </div>
+                            <div class="search-icon">
+                                <button><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mt-3">
+                        <div class="login-header">
+                            <button><i class="fas fa-user"></i></button>
+                            <button class="" data-toggle="modal" data-target="#dialog1">
+                                Đăng nhập /
+                            </button>
+                            <div class="modal fade" id="dialog1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">ĐĂNG NHẬP</h5>
+                                            <button class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- Trình bày các thành phần của Hộp thoại ở đây -->
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label for="user-name">Tên đăng nhập</label>
+                                                    <input type="email" class="form-control" name="" id="user-name"
+                                                        placeholder="Nhập email của bạn">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="password">Mật khẩu</label>
+                                                    <input type="password" class="form-control" name="" id="password"
+                                                        placeholder="Mật khẩu tối thiểu 8 kí tự">
+                                                </div>
+                                                <div class="form-group ml-4">
+                                                    <input type="checkbox" class="form-check-input" name=""
+                                                        id="Remember-me">
+                                                    <label for="Remember-me" class="form-check-label">Lưu đăng
+                                                        nhập</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="button" class="btn-block">Đăng nhập</button>
+                                                </div>
+                                                <div style="text-align: center;"><span>Bạn chưa có tài khoản
+                                                        ?</span><span style="margin-left: 5px;"><a href=""
+                                                            style="color: red; text-decoration:none"> Đăng ký</a></span>
+                                                </div>
+                                                <div style="text-align: center;"><span><a href=""
+                                                            style="text-decoration: none;">Quên mật khẩu?</span></a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="" data-toggle="modal" data-target="#dialog2">
+                                Đăng kí
+                            </button>
+                            <div class="modal fade" id="dialog2" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">ĐĂNG KÝ</h5>
+                                            <button class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- Trình bày các thành phần -->
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label for="name">Họ tên</label>
+                                                    <input type="text" class="form-control" name="" id="name"
+                                                        placeholder="Họ tên của bạn">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="number-phone">Họ tên</label>
+                                                    <input type="number" class="form-control" name="" id="number-phone"
+                                                        placeholder="Điện thoại của bạn">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="your-email">Họ tên</label>
+                                                    <input type="email" class="form-control" name="" id="your-email"
+                                                        placeholder="Email của bạn">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="your-address">Họ tên</label>
+                                                    <input type="text" class="form-control" name="" id="your-address"
+                                                        placeholder="Địa chỉ của bạn">
+                                                </div>
+                                                <div class="form-group">
+                                                    <span style="padding-right: 10px;">Giới tính</span>
+                                                    <input type="radio" name="gender" id="male" value="male">
+                                                    <label style="padding-right: 10px;" for="male">Nam</label>
+                                                    <input type="radio" name="gender" id="female" value="female">
+                                                    <label style="padding-right: 10px;" for="female">Nữ</label>
+                                                    <input type="radio" name="gender" id="other" value="other">
+                                                    <label style="padding-right: 10px;" for="other">Khác</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="birth">Này sinh</label>
+                                                    <input type="text" class="form-control" name="" id="birth"
+                                                        placeholder="Ngày/Tháng/Năm sinh">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="password">Mật khẩu</label>
+                                                    <input type="password" class="form-control" name="" id="password"
+                                                        placeholder="Mật khẩu tối thiểu 8 kí tự">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="re-password">Nhập lại mật khẩu</label>
+                                                    <input type="password" class="form-control" name="" id="password"
+                                                        placeholder="Mật khẩu tối thiểu 8 kí tự">
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="button" class="btn-block">Đăng Ký</button>
+                                                </div>
+                                                <div style="text-align: center;"><span>Bạn đã có tài khoản ?</span><span
+                                                        style="margin-left: 5px;"><a href=""
+                                                            style="color: red; text-decoration:none"> Đăng
+                                                            nhập</a></span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 mt-3">
+                        <div class="dropdown float-right" id="my-dropdown">
+                            <button class="dropdown-toggle" data-toggle="dropdown" data-display="static">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <span class="dropdown-item">Bạn chưa thêm sản phẩm nào vào giỏ hàng!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------------- END HEADER ---------------------->
+        <div class="wp-content mt-2">
+            <div class="menu-content">
+                <div class="row">
+                    <ul class="menu">
+                        <li><a href="">Trang chủ</a></li>
+                        <li>
+                            <a href="">Áo đội tuyển quốc gia</a>
+                            <ul class="submenu-1">
+                                <li><a href="">Áo Euro 2021</a></li>
+                                <li><a href="">Áo đội tuyển châu Mỹ</a></li>
+                                <li><a href="">Áo đội tuyển châu Á</a></li>
+                                <li><a href="">Áo đội tuyển châu Phi</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Áo câu lạc bộ</a>
+                            <ul class="submenu-2">
+                                <li><a href="">Giải Ngoại Hạng Anh (Pr.League)</a></li>
+                                <li><a href="">Giải Tây Ban Nha (Laliga)</a></li>
+                                <li><a href="">Giải Ý (Seria)</a></li>
+                                <li><a href="">Giải Đức (Budesliga)</a></li>
+                                <li><a href="">Giải Pháp (League 1)(</a></li>
+                                <li><a href="">Các giải khác (V-League)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Áo không logo</a></li>
+                        <li>
+                            <a href="">Giày bóng đá</a>
+                            <ul class="submenu-3">
+                                <li><a href="">Giày Bóng Đá Việt Nam</a></li>
+                                <li><a href="">Giày Bóng Đá Adidas</a></li>
+                                <li><a href="">Giày Bóng Đá Wika</a></li>
+                                <li><a href="">Giày Bóng Đá Ebet</a></li>
+                                <li><a href="">Giày Bóng Đá Nike</a></li>
+                                <li><a href="">Giày Bóng Đá Trẻ em</a></li>
+                                <li><a href="">Giày Bóng Đá Loại 1</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Áo khoác</a>
+                            <ul class="submenu-4">
+                                <li><a href="">Áo khoác CLB</a></li>
+                                <li><a href="">Áo khoác ĐTQG</a></li>
+                                <li><a href="">Áo khoác trẻ em</a></li>
+                                <li><a href="">Áo khoác dày</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Áo dài tay</a></li>
+                        <li><a href="">Áo trẻ em</a></li>
+                        <li><a href="">In áo bóng đá</a></li>
+                        <li><a href="">
+                                Phụ kiện</a>
+                            <ul class="submenu-5">
+                                <li><a href="">Túi Đựng Đồ</a></li>
+                                <li><a href="">Quả Bóng Đá</a></li>
+                                <li><a href="">Găng tay thủ môn</a></li>
+                                <li><a href="">Tất bóng đá</a></li>
+                                <li><a href="">Cờ, cúp, huy chương</a></li>
+                                <li><a href="">Áo Thủ Môn</a></li>
+                                <li><a href="">Áo Tập</a></li>
+                                <li><a href="">Phụ kiện Bảo vệ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Hệ thống chi nhánh</a>
+                            <ul class="submenu-6">
+                                <li><a href="">Hà Nội</a></li>
+                                <li><a href="">TP Hồ Chí Minh</a></li>
+                                <li><a href="">Đà Nẵng</a></li>
+                                <li><a href="">Khác</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!---------------------END MENU------------------------->
+            <div class="slide-content">
+                <div class="container">
+                    <div class="row">
+                        <div id="home-slide" class="carousel slide " data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#home-slide" class="active" data-slide-to="0"></li>
+                                <li data-target="#home-slide" data-slide-to="1"></li>
+                                <li data-target="#home-slide" data-slide-to="2"></li>
+                                <li data-target="#home-slide" data-slide-to="3"></li>
+                                <li data-target="#home-slide" data-slide-to="4"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="./list-product.html"><img src="./assets/images/slide1.jpg" alt="" class="d-block w-100"></a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="./list-product.html"><img src="./assets/images/slide3.png" alt="" class="d-block w-100"></a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="./list-product.html"><img src="./assets/images/slide2.png" alt="" class="d-block w-100"></a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="./list-product.html"><img src="./assets/images/slide5.png" alt="" class="d-block w-100"></a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="./list-product.html"><img src="./assets/images/slide4.jpg" alt="" class="d-block w-100"></a>
+                                </div>
+                            </div>
+                            <a href="#home-slide" class="carousel-control-prev" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a href="#home-slide" class="carousel-control-next" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--------------------- END SLIDE CONTENT ------------------->
+            <div class="container">
+                <div class="row">
+                    <div class="sock-price-today">
+                        <div class="container">
+                            <div class="title-sock-price-today">
+                                <h2>Giá Sốc Hôm Nay</h2>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="sock-sock">
+                                        <div class="sock-price-product-today">
+                                            <div class="sock-img"><a href="#"> <img src="./assets/images/sock-img-1.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                            <div class="sock-price">
+                                                <div class="sock-price-now">
+                                                    <a href="#"> <span>440.000</span> </a>
+                                                    <span style="text-decoration: underline;">đ</span>
+                                                </div>
+                                                <div class="sock-price-sale">
+                                                    <a href="#"> <span>-27%</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="sock-sold">
+                                                <a href="#"> <span>Đã bán 12</span></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="sock-price-product-today">
+                                            <div class="sock-img"><a href="#"> <img src="./assets/images/sock-img-2.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                            <div class="sock-price">
+                                                <div class="sock-price-now">
+                                                    <a href="#"> <span>2.132.000</span> </a>
+                                                    <span style="text-decoration: underline;">đ</span>
+                                                </div>
+                                                <div class="sock-price-sale">
+                                                    <a href="#"> <span>-20%</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="sock-sold">
+                                                <a href="#"> <span>Đã bán 8</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="sock-price-product-today">
+                                            <div class="sock-img"><a href="#"> <img src="./assets/images/sock-img-3.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                            <div class="sock-price">
+                                                <div class="sock-price-now">
+                                                    <a href="#"> <span>300.000</span> </a>
+                                                    <span style="text-decoration: underline;">đ</span>
+                                                </div>
+                                                <div class="sock-price-sale">
+                                                    <a href="#"> <span>-15%</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="sock-sold">
+                                                <a href="#"> <span>Đã bán 34</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="sock-price-product-today">
+                                            <div class="sock-img"><a href="#"> <img src="./assets/images/sock-img-4.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                            <div class="sock-price">
+                                                <div class="sock-price-now">
+                                                    <a href="#"> <span>1.600.000</span></a>
+                                                    <span style="text-decoration: underline;">đ</span>
+                                                </div>
+                                                <div class="sock-price-sale">
+                                                    <a href="#"> <span>-11%</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="sock-sold">
+                                                <a href="#"> <span>Đã bán 4</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="sock-price-product-today">
+                                            <div class="sock-img"><a href="#"> <img src="./assets/images/sock-img-5.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                            <div class="sock-price">
+                                                <div class="sock-price-now">
+                                                    <a href="#"><span>3.360.000</span> </a>
+                                                    <span style="text-decoration: underline;">đ</span>
+                                                </div>
+                                                <div class="sock-price-sale">
+                                                    <a href="#"> <span>-40%</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="sock-sold">
+                                                <a href="#"> <span>Đã bán 5</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Sock Price Today -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="product-content mt-4">
+                            <div class="container">
+                                <div class="title-product-content">
+                                    <div class="main-title-product-content rounded">
+                                        <h2><a href="./list-product.html">Áo đội tuyển quốc gia</a></h2>
+                                    </div>
+                                    <div class="sub-title-product-content">
+                                        <h3> <a href="./list-product.html">Áo Euro 2021</a></h3>
+                                        <h3> <a href="./list-product.html">Áo Đội tuyển Châu Mỹ</a></h3>
+                                        <h3> <a href="./list-product.html">Áo Đội tuyển Châu Á</a></h3>
+                                        <h3> <a href="./list-product.html">Áo Đội tuyển Châu Phi</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="main-product-content">
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href="./details-product.html"><img src="./assets/images/product-1.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="./details-product.html"> Áo Bóng Đá Đội tuyển Tây Ban Nha đen đỏ 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href="./details-product.html"> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href="./details-product.html"><img src="./assets/images/product-2.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="./details-product.html"> Áo Bóng Đá Đội tuyển Argentia bích vằn 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href="./details-product.html"> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href="./details-product.html"><img src="./assets/images/product-3.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="./details-product.html"> Áo Bóng Đá Đội tuyển Argentia trắng xanh 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href="./details-product.html"> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/product-4.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="./details-product.html"> Áo Bóng Đá Đội tuyển Ý xanh đen sân khách Euro 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href="./details-product.html"> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href="./details-product.html"><img src="./assets/images/product-5.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="./details-product.html"> Áo Bóng Đá Đội tuyển Ý sân nhà trắng Euro 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href="./details-product.html"> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="product-content mt-4">
+                            <div class="container">
+                                <div class="title-product-content">
+                                    <div class="main-title-product-content rounded">
+                                        <h2><a href="./list-product.html">Áo Câu lạc bộ 2021</a></h2>
+                                    </div>
+                                    <div class="sub-title-product-content">
+                                        <h3> <a href="">Giải Ngoại Hạng Anh</a></h3>
+                                        <h3> <a href="">Giải Tây Ban Nha</a></h3>
+                                        <h3> <a href="">Giải Ý</a></h3>
+                                        <h3> <a href="">Áo Đức</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="main-product-content">
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/club-1.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Bayern mùa giải 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/club-2.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá PSG đen xám 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/club-3.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Real ngọc lục 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/club-4.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Leicester City 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/club-5.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Livepool Bích cam 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>80.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>120.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>160.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="product-content mt-4">
+                            <div class="container">
+                                <div class="title-product-content">
+                                    <div class="main-title-product-content rounded">
+                                        <h2><a href="./list-product.html">Áo Training</a></h2>
+                                    </div>
+                                    <div class="sub-title-product-content">
+                                        <h3> <a href="">Áo Wika</a></h3>
+                                        <h3> <a href="">Áo Kamito</a></h3>
+                                        <h3> <a href="">Áo Xspeed</a></h3>
+                                        <h3> <a href="">Áo Keep & Fly</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="main-product-content">
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/training-1.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Wika trắng Công Phượng CP10 Collection</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>89.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>220.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>260.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/training-2.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="">  Áo Bóng Đá Wika đen Công Phượng CP10 Collection</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>89.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>220.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>260.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/training-3.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Wika vàng Công Phượng CP10 Collection</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>89.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>220.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>260.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/training-4.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo Bóng Đá Wika hồng Công Phượng CP10 Collection</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>89.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>220.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>260.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/training-5.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="">Áo Bóng Đá Wika cam Công Phượng CP10 Collection</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>89.000đ</b>
+                                            <span>(Hàng Thun Lạnh)</span>
+                                            <br>
+                                            <b>220.000đ</b>
+                                            <span>(Hàng Thu Giãn)</span>
+                                            <br>
+                                            <b>260.000đ</b>
+                                            <span>(Hàng Mè Caro)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="product-content mt-4">
+                            <div class="container">
+                                <div class="title-product-content">
+                                    <div class="main-title-product-content rounded">
+                                        <h2><a href="./list-product.html">Giày Bóng Đá</a></h2>
+                                    </div>
+                                    <div class="sub-title-product-content">
+                                        <h3> <a href="">Giày Bóng Đá Việt Nam</a></h3>
+                                        <h3> <a href="">Giày Bóng Đá Wika</a></h3>
+                                        <h3> <a href="">Giày Bóng Đá Trẻ em</a></h3>
+                                        <h3> <a href="">Giày Bóng Đá Adidas</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="main-product-content">
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/shoes-1.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Giày Bóng Đá trẻ em Wika CP10</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>469.000đ</b>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/shoes-2.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Giày Bóng Đá trẻ em Wika CP10</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>469.000đ</b>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/shoes-3.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="">Giày Bóng Đá trẻ em Wika CP10</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>469.000đ</b>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/shoes-4.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Giày Bóng Đá trẻ em Wika CP10</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>469.000đ</b>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/shoes-5.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="">Giày Bóng Đá trẻ em Wika CP10</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>469.000đ</b>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="product-content mt-4">
+                            <div class="container">
+                                <div class="title-product-content">
+                                    <div class="main-title-product-content rounded">
+                                        <h2><a href="./list-product.html">Áo khoác bóng đá</a></h2>
+                                    </div>
+                                    <div class="sub-title-product-content">
+                                        <h3> <a href="">Áo khoác đội tuyển</a></h3>
+                                        <h3> <a href="">Áo khoác câu lạc bộ</a></h3>
+                                        <h3> <a href="">Quần nỉ dài</a></h3>
+                                        <h3> <a href="">Áo khoác nhẹ</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="main-product-content">
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/coat-1.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Bộ Nỉ MU đen 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>300.000đ</b>
+                                            <span>(Hàng Việt)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/coat-2.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="">Bộ Nỉ PSG tím than 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>300.000đ</b>
+                                            <span>(Hàng Việt)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/coat-3.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="">Bộ Nỉ Arsenal đen 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>300.000đ</b>
+                                            <span>(Hàng Việt)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/coat-4.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Bộ Nỉ Junventus đen 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>300.000đ</b>
+                                            <span>(Hàng Việt)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/coat-5.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Bộ Nỉ PSG trắng 2020-2021</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>300.000đ</b>
+                                            <span>(Hàng Việt)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="product-content mt-4">
+                            <div class="container">
+                                <div class="title-product-content">
+                                    <div class="main-title-product-content rounded">
+                                        <h2><a href="./list-product.html">Áo bóng đá dài tay</a></h2>
+                                    </div>
+                                    <div class="sub-title-product-content">
+                                        <h3> <a href="">Áo dài tay đội tuyển</a></h3>
+                                        <h3> <a href="">Áo dài tay câu lạc bộ</a></h3>
+                                        <h3> <a href="">Áo bóng đá thủ môn dài tay</a></h3>
+                                        <h3> <a href="">Áo lót tay dài body</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="main-product-content">
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/long-shirt-1.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo lót body chính hãng Riki Xám Trắng</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>100.000đ</b>
+                                            <span>(Chính Hãng)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/long-shirt-2.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo lót body chính hãng Riki Da Lợt</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>100.000đ</b>
+                                            <span>(Chính Hãng)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/long-shirt-3.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo lót body chính hãng Riki xanh dương</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>100.000đ</b>
+                                            <span>(Chính Hãng)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/long-shirt-4.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo lót body chính hãng Riki xanh ngọc</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>100.000đ</b>
+                                            <span>(Chính Hãng)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/long-shirt-5.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="">Áo lót body chính hãng Riki Hồng</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>100.000đ</b>
+                                            <span>(Chính Hãng)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="product-content mt-4">
+                            <div class="container">
+                                <div class="title-product-content">
+                                    <div class="main-title-product-content rounded">
+                                        <h2><a href="./list-product.html">Quần áo thể thao trẻ em</a></h2>
+                                    </div>
+                                    <div class="sub-title-product-content">
+                                        <h3> <a href="">Áo bóng đá trẻ em đội tuyển</a></h3>
+                                        <h3> <a href="">Áo bóng đá trẻ em câu lạc bộ</a></h3>
+                                        <h3> <a href="">Áo bóng đá trẻ em mới nhất</a></h3>
+                                        <h3> <a href="">Áo thể thao trẻ em</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="main-product-content">
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/kid-1.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Bộ Quần áo bóng đá trẻ em clb Manchester United đỏ</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>Liên hệ</b>
+                                            <span>(Mẫu tham khảo)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/kid-2.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="">  Bộ Quần áo bóng đá trẻ em đội tuyển Việt Nam trắng</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>Liên hệ</b>
+                                            <span>(Mẫu tham khảo)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/kid-3.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Bộ Quần áo bóng đá trẻ em đội tuyển Việt Nam đỏ</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>Liên hệ</b>
+                                            <span>(Mẫu tham khảo)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/kid-4.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="">Bộ Quần áo bóng đá trẻ em clb Chelsea xanh sân nhà</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>Liên hệ</b>
+                                            <span>(Mẫu tham khảo)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/kid-5.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="">Bộ Quần áo bóng đá trẻ em clb Real Madrid trắng sân nhà</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>Liên hệ</b>
+                                            <span>(Mẫu tham khảo)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="product-content mt-4">
+                            <div class="container">
+                                <div class="title-product-content">
+                                    <div class="main-title-product-content rounded">
+                                        <h2><a href="./list-product.html">Đồ đá banh</a></h2>
+                                    </div>
+                                    <div class="sub-title-product-content">
+                                        <h3> <a href="">Khuyến mãi</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="main-product-content">
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/ball-1.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Quả bóng đá Paledas đen 99k</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>99.000đ</b>
+                                            <span>(Chính Hãng)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/ball-2.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Quả bóng đá Paledas đỏ 99k</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>99.000đ</b>
+                                            <span>(Chính Hãng)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/ball-3.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="">Quả bóng đá Paledas xanh 99k</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>99.000đ</b>
+                                            <span>(Chính Hãng)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/ball-4.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="">Giày bóng đá phủi 99k</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>99.000đ</b>
+                                            <span>(Chính Hãng)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/ball-5.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="">Đồ đánh banh giày Hyper cam chuối</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>99.000đ</b>
+                                            <span>(Chính Hãng)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="product-content mt-4">
+                            <div class="container">
+                                <div class="title-product-content">
+                                    <div class="main-title-product-content rounded">
+                                        <h2><a href="./list-product.html">Phụ kiện bóng đá</a></h2>
+                                    </div>
+                                    <div class="sub-title-product-content">
+                                        <h3> <a href="">Túi đựng đồ bóng đá</a></h3>
+                                        <h3> <a href="">Quả bóng đá</a></h3>
+                                        <h3> <a href="">Phụ kiện bảo vệ</a></h3>
+                                        <h3> <a href="">Găng tay thủ môn</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="main-product-content">
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/extra-1.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Bọc ống đồng (rờ te) Wika chính hãng màu xanh</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>40.000đ</b>
+                                            <span>(Hàng Loại 1)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/extra-2.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="">Bọc ống đồng (rờ te) Wika chính hãng màu đen</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>40.000đ</b>
+                                            <span>(Hàng Loại 1)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/extra-3.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="">Bọc ống đồng (rờ te) Wika chính hãng màu vàng</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>40.000đ</b>
+                                            <span>(Hàng Loại 1)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/extra-4.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href="">Bọc ống đồng (rờ te) Wika chính hãng màu đỏ</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>40.000đ</b>
+                                            <span>(Hàng Loại 1)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                    </div>
+                                    <div class="details-product-content">
+                                        <div class="img-product-content">
+                                            <a href=""><img src="./assets/images/extra-5.jpg" class="" width="200px"
+                                                    height="260px" alt=""></a>
+                                        </div>
+                                        <div class="name-product-content">
+                                            <a href=""> Áo thủ môn dài tay Riki Rollmes màu xanh trắng</a>
+                                        </div>
+                                        <div class="price-product-content">
+                                            <b>150.000đ</b>
+                                            <span>(Chính Hãng)</span>
+                                        </div>
+                                        <div class="more-product-content">
+                                            <a href=""> Xem chi tiết > </a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="product-content mt-4">
+                            <div class="container">
+                                <div class="title-product-content">
+                                    <div class="main-title-product-content rounded">
+                                        <h2><a  href="./newspapers.html">Tin tức nổi bật</a></h2>
+                                    </div>
+                                    <div class="sub-title-product-content">
+                                        <h3> <a href="./newspapers.html">Bóng đá thế giới</a></h3>
+                                        <h3> <a href="./newspapers.html">Bóng đá trong nước</a></h3>
+                                        <h3> <a href="./newspapers.html">Dự đoán tỉ số</a></h3>
+                                        <h3> <a href="./newspapers.html">Lịch thi đấu</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="news">
+                                    <div class="main-news mt-4">
+                                        <a target="blank" href="https://www.24h.com.vn/bong-da/mu-thua-dam-liverpool-bao-anh-bang-hoang-goi-quy-do-la-con-tau-titanic-c48a1300610.html"><img src="./assets/images/main-news.jpg" alt=""></a>
+                                        <h5>Manchester United thua đậm Liverpool 0-5</h5>
+                                        <span >Manchester United đã để Liverpool chọc thủng lưới 5 bàn không gỡ ngay tại Old Trafford. Có thể nói, không ai tưởng tượng ra kịch bản thảm hoạ đến vậy trước khi trận Derby nước Anh diễn ra...</span>
+                                    </div>
+                                    <div class="other-news mt-4">
+                                        <div class="other-news-1">
+                                            <a href="./newspapers.html"><img src="./assets/images/other-news-1.jpg" alt=""></a>
+                                            <span>Những đôi giày đẹp nhất thế giới</span>
+                                        </div>
+                                        <div class="other-news-2">
+                                            <a href="./newspapers.html"><img src="./assets/images/other-news-2.jpg" alt=""></a>
+                                            <span>Giày đá bóng cổ cao có tác dụng gì?</span>
+                                        </div>
+                                        <div class="other-news-3">
+                                            <a href="./newspapers.html"><img src="./assets/images/other-news-3.jpg" alt=""></a>
+                                            <span>Nên chọn giày đá bóng cổ cao hay thấp?</span>
+                                        </div>
+                                        <div class="other-news-4">
+                                            <a href="./newspapers.html"><img src="./assets/images/other-news-4.jpg" alt=""></a>
+                                            <span>Những đôi giày bóng đá tốt nhất thế giới</span>
+                                        </div>
+                                    </div>    
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------- END CONTENT ------------------>
+        <div class="footer mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-1 col-md-3">
+                        <h6>CHẤP NHẬN THANH TOÁN</h6>
+                        <span>Chuyển khoản ngân hàng</span><br>
+                        <span>Visa,Master Card</span><br>
+                        <span>Thanh toán khi nhận hàng</span>
+                    </div>
+                    <div class="footer-2 col-md-3">
+                        <h6>HỖ TRỢ KHÁCH HÀNG</h6>
+                        <span> Bảng báo giá</span><br>
+                        <span> Hình thức thanh toán</span><br>
+                        <span> Giao hàng & trả hàng</span><br>
+                        <span> Chính sách bảo hành</span><br>
+                        <span> Thuế GTGT</span><br>
+                        <span> Hệ thống chi nhánh</span><br>
+                    </div>
+                    <div class="footer-3 col-md-3">
+                        <h6>ÁO BÓNG ĐÁ TRÊN</h6>
+                        <a target="blank" href="https://www.facebook.com/annhquan.dev/"><img src="./assets/images/footer-logo-1.png" alt=""></a>
+                        <a href=""><img src="./assets/images/footer-logo-2.png" alt=""></a>
+                        <a href=""><img src="./assets/images/footer-logo-3.png" alt=""></a>
+                        <a href=""><img src="./assets/images/footer-logo-4.png" alt=""></a>
+                        <br>
+                        <img src="./assets/images/footer-3.jpg" alt="">
+                    </div>
+                    <div class="footer-4 col-md-3">
+                        <h6>Fanpage Facebook</h6>
+                        <a href="https://www.facebook.com/leomessi"><img width="80%" src="./assets/images/fanpage.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
