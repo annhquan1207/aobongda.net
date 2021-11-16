@@ -40,7 +40,7 @@
         });
         $(document).ready(function () {
             $("#submit-rate ").click(function () {
-                alert("Đã thêm nhận xét sản phẩm!");
+                alert("Bạn cần đăng nhập trước  !");
             });
         });
     </script>
@@ -403,20 +403,10 @@
                                     <textarea placeholder="Nhập đánh giá về sản phẩm, tối thiếu 120 kí tự" class="form-control" name="" id="" cols="50" rows="5"></textarea>
                                 </div>
                             </div>
-                            <div class="input-rate ">
-                                <div class="form-group ">
-                                    <input type="text" placeholder="Họ tên">
-                                </div>
-                                <div class="form-group ">
-                                    <input type="text" placeholder="Số điện thoại">
-                                </div>
-                                <div class="form-group ">
-                                    <input type="text" placeholder="Email">
-                                </div>
-                            </div>
+                            
                         </div>
                         <div class="submit-rate ">
-                            <button id="submit-rate" class="btn">Gửi đánh giá</button>
+                            <button style="color: #ffffff;" id="submit-rate" class="btn" data-toggle="modal" data-target="#dialog1" >Gửi đánh giá</button>
                         </div>
                         <div class="user-rate mt-5">
                             <strong style="font-size: 17px;" >Anh Quân</strong><br>
